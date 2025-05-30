@@ -1,0 +1,21 @@
+{
+  "id": "io.remotestorage.armadietto_cloudron",
+  "title": "Armadietto on Cloudron",
+  "author": "remoteStorage community",
+  "tagline": "Node.js remoteStorage server",
+  "postInstallMessage": "file://POSTINSTALL.md",
+  "version": "0.0.1",
+  "healthCheckPath": "/",
+  "httpPort": 8000,
+  "website": "https://github.com/remotestorage/armadietto",
+  "addons": {
+    "localstorage": {}
+  },
+  "icon": "file://logo.png",
+  "tags": [
+    "remotestorage"
+  ],
+  "mediaLinks": [],
+  "manifestVersion": 2
+}
+
