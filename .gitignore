@@ -1,12 +1,12 @@
-# GIT
-.git
-
 # NODE
 node_modules
-npm-debug.log
+package-lock.json
 
 # BUILD
 **/__*/*
+
+# OS
+**/*.DS_Store
 
 # LOCAL
 .env*
