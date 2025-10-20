@@ -1,7 +1,7 @@
 captainVersion: 4
 services:
   $$cap_appname:
-    image: remotestorage/armadietto-oneclick:latest
+    image: remotestorage/armadietto-oneclick:caprover
     volumes:
       - $$cap_appname-data:/usr/src/app/data
     restart: always
