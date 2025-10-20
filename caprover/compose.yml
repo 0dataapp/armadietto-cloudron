@@ -1,0 +1,23 @@
+captainVersion: 4
+services:
+  $$cap_appname:
+    image: remotestorage/armadietto-oneclick:latest
+    volumes:
+      - $$cap_appname-data:/usr/src/app/data
+    restart: always
+    caproverExtra:
+      containerHttpPort: 8000
+    environment:
+      ALLOW_SIGNUP: $$cap_armadietto_allow_signup
+caproverOneClickApp:
+  instructions:
+    start: See repository for details https://github.com/0dataapp/armadietto-oneclick
+    end: armadietto-oneclick is deployed and available as $$cap_appname. 
+  displayName: armadietto-oneclick
+  description: Armadietto is a self-hostable remoteStorage server.
+  documentation: See repository for details https://github.com/0dataapp/armadietto-oneclick
+  variables:
+    - id: $$cap_armadietto_allow_signup
+      label: Allow signup
+      defaultValue: 'true'
+      description: 'Once you create an account, you may want to set this to `false` in "App Configs" to prevent further signups.'
