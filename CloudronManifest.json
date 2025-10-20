@@ -1,6 +1,6 @@
 {
-  "id": "io.remotestorage.armadietto_cloudron",
-  "title": "Armadietto on Cloudron",
+  "id": "io.remotestorage.armadietto",
+  "title": "Armadietto",
   "author": "remoteStorage community",
   "tagline": "Node.js remoteStorage server",
   "postInstallMessage": "file://POSTINSTALL.md",
