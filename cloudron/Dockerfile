@@ -4,7 +4,7 @@ RUN mkdir -p /app/code
 WORKDIR /app/code
 
 ARG COMMIT=2793236cb9cbe244dd5fca8095a156c8c562acad
-RUN curl -L https://github.com/remotestorage/armadietto/archive/2793236cb9cbe244dd5fca8095a156c8c562acad.zip -o archive.zip && unzip -q archive.zip && mv "./armadietto-${COMMIT}/"* . && rm -r "./armadietto-${COMMIT}/" archive.zip
+RUN curl -L https://github.com/remotestorage/armadietto/archive/${COMMIT}.zip -o archive.zip && unzip -q archive.zip && mv "./armadietto-${COMMIT}/"* . && rm -r "./armadietto-${COMMIT}/" archive.zip
 
 RUN npm ci --production
 
