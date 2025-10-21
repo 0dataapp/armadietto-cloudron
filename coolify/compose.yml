@@ -9,4 +9,4 @@ services:
     volumes:
       - ${COOLIFY_VOLUME_APP}:/usr/share/armadietto
     environment:
-      ALLOW_SIGNUP: ${OTHER_NAME_IN_COOLIFY:-true}
+      ALLOW_SIGNUP: ${ALLOW_SIGNUP:-true}
