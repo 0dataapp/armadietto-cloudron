@@ -68,6 +68,8 @@ Update by clicking "Redeploy" or "Advanced" → "Force deploy (without cache)" t
 
 Once you sign up for an account, you may want disable signups by navigating to "Environment Variables" and set `ALLOW_SIGNUP` to `false`.
 
+You may also want to enable "Force HTTPS by redirecting all HTTP traffic to HTTPS".
+
 ## [Yunohost](https://yunohost.org)
 
 Although not part of this package, there was a [similar attempt for Yunohost](https://community.remotestorage.io/t/armadietto-on-yunohost-front-update-proposal/747) which is currently available in the [YunoHost app store](https://apps.yunohost.org/app/armadietto).
