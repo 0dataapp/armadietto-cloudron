@@ -1,7 +1,5 @@
 #!/bin/sh
 
-su - armadietto
-
 if [[ "$ALLOW_SIGNUP" == "false" ]]; then
   sed -i 's/"allow_signup": true/"allow_signup": false/' /etc/armadietto/conf.json
 fi

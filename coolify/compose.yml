@@ -5,7 +5,7 @@
 
 services:
   app:
-    image: remotestorage/armadietto-oneclick:coolify@sha256:be18db4ea87dc4574511b529a44e2f010fc0451a1721af35e3fc3d618896549b
+    image: remotestorage/armadietto-oneclick:coolify@sha256:23e7f7eea80227a326aff6854476451195331c11d211084a6aab93b1c55d9439
     volumes:
       - ${COOLIFY_VOLUME_APP}:/usr/share/armadietto
     environment:
