@@ -1,10 +1,9 @@
 #!/bin/sh
 
+# TODO: fix permissions issues
 if [[ "$ALLOW_SIGNUP" == "false" ]]; then
   sed -i 's/"allow_signup": true/"allow_signup": false/' /etc/armadietto/conf.json
-fi
-
-if [[ "$ALLOW_SIGNUP" != "false" ]]; then
+else 
   sed -i 's/"allow_signup": false/"allow_signup": true/' /etc/armadietto/conf.json
 fi
 
