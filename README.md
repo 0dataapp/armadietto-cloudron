@@ -2,11 +2,11 @@
 
 [Armadietto](https://github.com/remotestorage/armadietto/) is a self-hostable [remoteStorage](https://remotestorage.io) server.
   
-This project packages it for [one-click](https://easyindie.app) deploys on self-hosted panels; there was a similar attempt for [Yunohost](https://community.remotestorage.io/t/armadietto-on-yunohost-front-update-proposal/747).
+This project packages it for [one-click](https://easyindie.app) deploys on self-hosted panels; there was a [similar attempt for Yunohost](https://community.remotestorage.io/t/armadietto-on-yunohost-front-update-proposal/747) which is currently available in the [YunoHost app store](https://apps.yunohost.org/app/armadietto).
 
 It packages 'monolithic' as it requires no additional services. This refers to an older version of the spec (draft-dejong-remotestorage-01), but that shouldn't be an issue with most apps.
 
-More info on each platform in [oneclick-proof](https://github.com/0dataapp/oneclick-proof).
+These panels maintain their own 'app catalogs' for one-click installs; until this is included there, it will require more clicks to setup. Below are instructions for each panel. More info in [oneclick-proof](https://github.com/0dataapp/oneclick-proof).
 
 ## [Cloudron](https://cloudron.io)
 
