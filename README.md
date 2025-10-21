@@ -36,8 +36,6 @@ cloudron update --image remotestorage/armadietto-oneclick:cloudron --app armadie
 2. select the ">> TEMPLATE <<" app and paste the configuration from `caprover/compose.yml`.
 3. name your app as `armadietto` or something else, and then deploy.
 
-### updates and other ways to deploy
-
 To update an existing app: navigate to "Deployment", enter `remotestorage/armadietto-oneclick:latest` into "Deploy via ImageName", then click "Deploy". It may take some time after 'finishing' so give it a minute.
 
 ## [Coolify](https://coolify.io)
