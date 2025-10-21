@@ -1,6 +1,7 @@
 FROM remotestorage/armadietto-monolithic:latest
 
-ARG ALLOW_SIGNUP=${ALLOW_SIGNUP}
-ENV ALLOW_SIGNUP=${ALLOW_SIGNUP}
+WORKDIR /opt/armadietto
 
-CMD ["bash", "coolify/start.sh"]
+ADD . .
+
+CMD ["sh", "coolify/start.sh"]
