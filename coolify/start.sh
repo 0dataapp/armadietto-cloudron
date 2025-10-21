@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+echo "hello"
 
 cp -f /opt/armadietto/bin/conf.monolithic.json /etc/armadietto/conf.json
 
