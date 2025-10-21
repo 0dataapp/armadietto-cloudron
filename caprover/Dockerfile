@@ -20,7 +20,7 @@ RUN mkdir -m 0700 $CONFIG_PATH_LOGS
 
 ARG USER="armadietto"
 ENV USER=$USER
-RUN adduser -HD $USER
+RUN adduser --system --no-create-home $USER
 
 RUN chown $USER $CONFIG_PATH_STORAGE
 RUN chown $USER $CONFIG_PATH_LOGS
