@@ -1,24 +1,70 @@
-# armadietto-cloudron
+# armadietto-oneclick
 
 [Armadietto](https://github.com/remotestorage/armadietto/) is a self-hostable [remoteStorage](https://remotestorage.io) server.
   
-This project packages it for [Cloudron](https://www.cloudron.io), which makes it easy to install with one-click; there was a similar attempt for [Yunohost](https://community.remotestorage.io/t/armadietto-on-yunohost-front-update-proposal/747).
+This project packages it for [one-click](https://easyindie.app) deploys on self-hosted panels; there was a similar attempt for [Yunohost](https://community.remotestorage.io/t/armadietto-on-yunohost-front-update-proposal/747).
 
-It currently refers to an older version of the spec (draft-dejong-remotestorage-01), but this shouldn't be an issue with most apps. See [discussion](https://community.remotestorage.io/t/armadietto-on-cloudron/915) for more context.
+It packages 'monolithic' as it requires no additional services. This refers to an older version of the spec (draft-dejong-remotestorage-01), but that shouldn't be an issue with most apps.
 
-## Installation
+More info on each platform in [oneclick-proof](https://github.com/0dataapp/oneclick-proof).
 
-If you're comfortable with Docker, follow the [packaging tutorial](https://docs.cloudron.io/packaging/tutorial/); something like:
+## [Cloudron](https://cloudron.io)
+
+First clone the project locally:
 
 ```
-git clone https://github.com/0dataapp/armadietto-cloudron
-cd armadietto-cloudron
-
-docker build -t username/armadietto-cloudron:0.0.1 .
-docker push username/armadietto-cloudron:0.0.1
+git clone https://github.com/0dataapp/armadietto-oneclick
+cd armadietto-oneclick
 ```
 
-Or [use Cloudron itself to build and as a registry](https://rosano.ca/log/01hs9tx1ytkp3kb0v03pdpm08a).
+Then from the project directory, run the `install` command via the [Cloudron CLI](https://docs.cloudron.io/packaging/cli/):
+
+```
+cloudron install --image remotestorage/armadietto-oneclick:cloudron --location armadietto
+```
+
+Updates are also done from the project directory:
+
+```
+cloudron update --image remotestorage/armadietto-oneclick:cloudron --app armadietto
+```
+
+## [Caprover](https://caprover.com)
+
+1. navigate to "Apps" → "Create A New App" → "One-Click Apps/Databases"
+, then search for `>> TEMPLATE <<` or scroll to bottom.
+2. select the ">> TEMPLATE <<" app and paste the configuration from `caprover/compose.yml`.
+3. name your app as `armadietto` or something else, and then deploy.
+
+### updates and other ways to deploy
+
+To update an existing app: navigate to "Deployment", enter `remotestorage/armadietto-oneclick:latest` into "Deploy via ImageName", then click "Deploy". It may take some time after 'finishing' so give it a minute.
+
+## [Coolify](https://coolify.io)
+
+1. navigate to "Projects" → choose/create a project… → "Resources" → "+ New" → "Applications" → "Git Based" → "Public Repository"
+2. configure as follows:
+	- Repository URL:
+		
+		```
+		https://github.com/0dataapp/armadietto-oneclick/tree/master
+		```
+	
+	- Build Pack:
+		
+		```
+		Docker Compose
+		```
+	
+	- Docker Compose Location:
+		
+		```
+		/coolify/compose.yml
+		```
+3. select "Continue" and then, on the following "Configuration" page, click "Deploy".
+4. setup a domain under "Configuration" → "General" → "Domains" by entering something like `https://armadietto.[your root domain]` and clicking "Save", or make a random one by clicking "Generate Domain"; in case of [SSL issues](https://coolify.io/docs/troubleshoot/dns-and-domains/lets-encrypt-not-working) click "Redeploy".
+
+Update by clicking "Redeploy" or "Advanced" → "Force deploy (without cache)" to pull from the Git repository.
 
 ## Questions
 
