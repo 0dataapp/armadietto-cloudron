@@ -11,7 +11,7 @@
   "addons": {
     "localstorage": {}
   },
-  "postInstallMessage": "Once you sign up for an account, you may want to set `allow_signup` to `false` in `/app/data/conf.json` and restart the app to prevent further signups.",
+  "postInstallMessage": "Once you sign up for an account, you may want disable signups by setting `allow_signup` to `false` in `/app/data/conf.json` and restarting the app.",
   "icon": "file://logo.png",
   "tags": [
     "remotestorage"
