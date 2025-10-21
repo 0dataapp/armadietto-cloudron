@@ -3,7 +3,7 @@ services:
   $$cap_appname:
     image: remotestorage/armadietto-oneclick:caprover
     volumes:
-      - $$cap_appname-data:/usr/src/app/data
+      - $$cap_appname-data:/usr/share/armadietto
     restart: always
     caproverExtra:
       containerHttpPort: 8000
