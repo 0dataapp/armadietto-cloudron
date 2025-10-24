@@ -33,7 +33,7 @@ Once you sign up for an account, you may want disable signups by setting `allow_
 
 1. navigate to "Apps" → "Create A New App" → "One-Click Apps/Databases"
 , then search for `>> TEMPLATE <<` or scroll to bottom.
-2. select the ">> TEMPLATE <<" app and paste the configuration from `caprover/compose.yml`.
+2. select the `>> TEMPLATE <<` app and paste the configuration from `caprover/compose.yml`.
 3. name your app as `armadietto` or something else, and then deploy.
 
 To update an existing app: navigate to "Deployment", enter `remotestorage/armadietto-oneclick:latest` into "Deploy via ImageName", then click "Deploy". It may take some time after 'finishing' so give it a minute.
