@@ -31,18 +31,18 @@ Once you sign up for an account, you may want disable signups by setting `allow_
 
 ## [Caprover](https://caprover.com)
 
-1. navigate to "Apps" → "Create A New App" → "One-Click Apps/Databases"
+1. navigate to `Apps` → `Create A New App` → `One-Click Apps/Databases`
 , then search for `>> TEMPLATE <<` or scroll to bottom.
 2. select the `>> TEMPLATE <<` app and paste the configuration from `caprover/compose.yml`.
 3. name your app as `armadietto` or something else, and then deploy.
 
-To update an existing app: navigate to "Deployment", enter `remotestorage/armadietto-oneclick:latest` into "Deploy via ImageName", then click "Deploy". It may take some time after 'finishing' so give it a minute.
+To update an existing app: navigate to `Deployment`, enter `remotestorage/armadietto-oneclick:latest` into `Deploy via ImageName`, then click `Deploy`. It may take some time after 'finishing' so give it a minute.
 
-Once you sign up for an account, you may want disable signups by navigating to "App Config" and set `ALLOW_SIGNUP` to `false`.
+Once you sign up for an account, you may want disable signups by navigating to `App Config` and set `ALLOW_SIGNUP` to `false`.
 
 ## [Coolify](https://coolify.io)
 
-1. navigate to "Projects" → choose/create a project… → "Resources" → "+ New" → "Applications" → "Git Based" → "Public Repository"
+1. navigate to `Projects` → choose/create a project… → `Resources` → `+ New` → `Applications` → `Git Based` → `Public Repository`
 2. configure as follows:
 	- Repository URL:
 		
@@ -61,20 +61,20 @@ Once you sign up for an account, you may want disable signups by navigating to "
 		```
 		/coolify/compose.yml
 		```
-3. select "Continue" and then, on the following "Configuration" page, click "Deploy".
-4. setup a domain under "Configuration" → "General" → "Domains" by entering something like `https://armadietto.[your root domain]` and clicking "Save", or make a random one by clicking "Generate Domain"; in case of [SSL issues](https://coolify.io/docs/troubleshoot/dns-and-domains/lets-encrypt-not-working) click "Redeploy".
+3. select `Continue` and then, on the following `Configuration` page, click `Deploy`.
+4. setup a domain under `Configuration` → `General` → `Domains` by entering something like `https://armadietto.[your root domain]` and clicking `Save`, or make a random one by clicking `Generate Domain`; in case of [SSL issues](https://coolify.io/docs/troubleshoot/dns-and-domains/lets-encrypt-not-working) click `Redeploy`.
 
-Update by clicking "Redeploy" or "Advanced" → "Force deploy (without cache)" to pull from the Git repository.
+Update by clicking `Redeploy` or `Advanced` → `Force deploy (without cache)` to pull from the Git repository.
 
-Once you sign up for an account, you may want disable signups by navigating to "Environment Variables" and set `ALLOW_SIGNUP` to `false`.
+Once you sign up for an account, you may want disable signups by navigating to `Environment Variables` and set `ALLOW_SIGNUP` to `false`.
 
-You may also want to enable "Force HTTPS by redirecting all HTTP traffic to HTTPS".
+You may also want to enable `Force HTTPS by redirecting all HTTP traffic to HTTPS`.
 
 ## [Yunohost](https://yunohost.org)
 
 Although not part of this package, there was a [similar attempt for Yunohost](https://community.remotestorage.io/t/armadietto-on-yunohost-front-update-proposal/747) which is currently available in the [YunoHost app store](https://apps.yunohost.org/app/armadietto).
 
-Once you sign up for an account, you may want disable signups by navigating to "Applications" → "Armadietto" → "Settings" and set "Allow signups?" to `No`.
+Once you sign up for an account, you may want disable signups by navigating to `Applications` → `Armadietto` → `Settings` and set `Allow signups?` to `No`.
 
 ## Questions
 
