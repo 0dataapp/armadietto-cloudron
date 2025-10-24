@@ -12,11 +12,9 @@ if [[ ! -f /app/data/conf.json ]]; then
   rm /app/data/conf.json.bak
 fi
 
-chown -R cloudron:cloudron /app/data
-
 mkdir -p /app/data/armadietto
 mkdir -p /app/data/logs
 
-chown -R cloudron:cloudron /app/data/armadietto
+chown -R cloudron:cloudron /app/data
 
 exec /usr/local/bin/gosu cloudron:cloudron /app/code/bin/armadietto.js -c /app/data/conf.json
